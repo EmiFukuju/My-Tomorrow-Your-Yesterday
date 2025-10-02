@@ -47,15 +47,15 @@
         
         btnSubmit.addEventListener("click", ()  => {
 
-            var selectedDeparture = document.querySelector("input[name='g1']:checked");
+            var selectobj = document.querySelector("input[name='g1']:checked");
             
-            var selectedArrival = selectCity.value;
+            var selectedCity = selectCity.value;
             
-            txtResult1.innerText = "출발역: " + selectedDeparture.value;
-            txtResult2.innerText = "도착역: " + selectedArrival;
+            txtResult1.innerText = "출발역: " + selectobj.value;
+            txtResult2.innerText = "도착역: " + selectedCity;
 
-            console.log("출발역:", selectedDeparture.value);
-            console.log("도착역:", selectedArrival);
+            console.log("출발역:", selectobj.value);
+            console.log("도착역:", selectedCity);
         });
 
     </script>
