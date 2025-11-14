@@ -6,7 +6,7 @@ body {
     color: white;
     font-family: 'RoundedFixedsys';
     display: flex; 
-    align-items: center; 
+
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -20,23 +20,31 @@ body {
     font-display: swap;
 }
 
-.box-1{
+header{
+    display: flex;
+    background-color: yellow;
     font-size: 80px;
+    padding: 20px;
+} 
 
+main{
+    flex: 1;
 }
 
-.box-2{
+footer{
+    display: flex;
+    background-color: green;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.title-txt{
+    font-size: 80px;
+}
+.menu-item{
     font-size: 30px;
 }
 
-.version-info{
-    position: absolute;
-    top: 16px;
-    right: 4px;
-}
-
-.copyright-info{
-    position: absolute;
-    bottom: 16px;
-    left: 12px;
+.menu-item.select{
+    background-color: orange;
 }
