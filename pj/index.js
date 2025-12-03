@@ -67,55 +67,71 @@ const db = {
             "그곳에서 새롭고 무시무시한 위협을 마주하고, 충격적인 진실을 밝혀내 보세요. 과연 그림자 속에 도사린 초현실적인 새 창조물들을 따돌릴 수 있을까요? 실험 뒤에 감춰진 수수께끼를 밝혀낼 때까지 살아남을 수는 있을까요? 한 걸음 내디딜 때마다 용기가 시험받고, 퍼즐 하나하나가 머릿속을 뒤죽박죽으로 헝클어뜨리며, 모퉁이를 돌 때마다 마지막을 각오해야 할 겁니다."
             <br><br><strong>경고:</strong> 이 섹션에는 스포일러가 포함되어 있습니다.`
     },
+    // [중요] 여기 'image' 경로를 본인이 저장한 파일명과 똑같이 맞춰주세요!
     characters: [
         { 
             id: 1, season: 1, name: "Huggy Wuggy", nameKR: "허기워기", 
             role: "보안 / 마스코트", gender: "남성", color: "파란색 (Blue)",
             desc: "Playtime Co.의 가장 성공적인 마스코트입니다. 그는 사람들을 안아주기 위해 만들어졌지만(Hugs), 공장의 보안 시스템으로도 작동합니다. 챕터 1의 메인 빌런입니다.", 
-            egg: "이스터에그: 벤트 안의 1006번 실험체 기록", icon: "fa-frog" 
+            egg: "이스터에그: 벤트 안의 1006번 실험체 기록", 
+            image: "images/huggy.jpg", // 이미지 파일 경로 (직접 준비 필요)
+            icon: "fa-frog" // 이미지가 없을 때 뜰 아이콘
         },
         { 
             id: 2, season: 1, name: "Poppy Playtime", nameKR: "파피", 
             role: "지능형 인형", gender: "여성", color: "빨강/하얀색",
             desc: "세계 최초의 지능을 가진 인형입니다. 케이스에 갇혀 있었으나 주인공에 의해 풀려납니다. 그녀의 진짜 목적은 아직 불분명합니다.", 
-            egg: "이스터에그: 오프닝 비디오 눈동자 반사", icon: "fa-child-dress" 
+            egg: "이스터에그: 오프닝 비디오 눈동자 반사", 
+            image: "images/poppy.jpg",
+            icon: "fa-child-dress" 
         },
         { 
             id: 3, season: 2, name: "Mommy Long Legs", nameKR: "마미 롱 레그", 
             role: "게임 스테이션 관리자", gender: "여성", color: "분홍색 (Pink)",
             desc: "신축성 있는 플라스틱으로 만들어진 거미 형태의 인형입니다. 아이들을 돌보는 엄마 역할을 했으나, 현재는 잔인한 게임의 주최자입니다.", 
-            egg: "이스터에그: 천장 위 감시실", icon: "fa-spider" 
+            egg: "이스터에그: 천장 위 감시실", 
+            image: "images/mommy.jpg",
+            icon: "fa-spider" 
         },
         { 
             id: 5, season: 3, name: "CatNap", nameKR: "캣냅", 
             role: "수면 유도 / 보안", gender: "남성", color: "보라색 (Purple)",
             desc: "Smiling Critters의 일원입니다. 붉은 양귀비 가스를 뿜어 아이들을 재우거나 환각을 보게 합니다. 프로토타입을 신처럼 숭배합니다.", 
-            egg: "이스터에그: 뉴스 화면의 그림자", icon: "fa-cat" 
+            egg: "이스터에그: 뉴스 화면의 그림자", 
+            image: "images/catnap.jpg",
+            icon: "fa-cat" 
         },
-        /* 챕터 4 신규 캐릭터 */
         {
             id: 6, season: 4, name: "Baba Chops", nameKR: "바바 찹스",
             role: "신규 적대적 장난감", gender: "미상", color: "미상",
             desc: "챕터 4에 새롭게 등장하는 캐릭터입니다. 상세 정보는 게임 발매 후 업데이트될 예정입니다.",
-            egg: "정보 수집 중...", icon: "fa-skull"
+            egg: "정보 수집 중...", 
+            image: "images/babachops.jpg",
+            icon: "fa-skull"
         },
         {
             id: 7, season: 4, name: "Yarnaby", nameKR: "야나비",
             role: "즉사 공격 유닛", gender: "미상", color: "실타래?",
             desc: "플레이어를 한 번에 즉사시킬 수 있는 강력한 몬스터 중 하나입니다. 챕터 4의 깊은 심연에서 마주칠 수 있습니다.",
-            egg: "즉사 패턴 주의", icon: "fa-ghost"
+            egg: "즉사 패턴 주의", 
+            image: "images/yarnaby.jpg",
+            icon: "fa-ghost"
         },
         {
             id: 8, season: 4, name: "The Doctor", nameKR: "박사",
             role: "주요 인물/적", gender: "미상", color: "미상",
             desc: "챕터 4의 핵심적인 역할을 할 것으로 보이는 인물입니다. 실험 뒤에 감춰진 수수께끼와 관련이 깊습니다.",
-            egg: "연구 기록에서 언급됨", icon: "fa-user-md"
+            egg: "연구 기록에서 언급됨", 
+            image: "images/doctor.jpg",
+            icon: "fa-user-md"
         },
         {
             id: 9, season: 4, name: "Doughy the Doughman", nameKR: "도이 더 도우맨",
             role: "즉사 공격 유닛", gender: "남성 추정", color: "반죽색",
             desc: "야나비와 함께 플레이어를 한 방에 처치할 수 있는 위협적인 적입니다. 반죽(Dough)을 모티브로 한 기괴한 외형을 가졌을 것으로 추정됩니다.",
-            egg: "제빵실 구역?", icon: "fa-cookie-bite"
+            egg: "제빵실 구역?", 
+            image: "images/doughy.jpg",
+            icon: "fa-cookie-bite"
         }
     ],
     comments: [
@@ -147,6 +163,13 @@ function router(page, param = null) {
 
 // 홈 렌더링
 function renderHome(target) {
+    // 이미지가 있으면 이미지 태그, 없으면 아이콘 사용
+    const getThumbnail = (c) => {
+        // 이미지가 로드되지 않을 경우(에러) 아이콘으로 대체하는 onerror 추가
+        return `<img src="${c.image}" alt="${c.name}" style="width:100%; height:150px; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div style="display:none; font-size:3rem; color:var(--primary-accent); padding:20px;"><i class="fa-solid ${c.icon}"></i></div>`;
+    };
+
     target.innerHTML = `
         <div class="page-header">
             <h1 class="page-title">Playtime Co. Wiki</h1>
@@ -160,9 +183,11 @@ function renderHome(target) {
         <h2>주요 문서 (Featured Articles)</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top:15px;">
             ${db.characters.slice(0, 3).map(c => `
-                <div onclick="router('characters', ${c.id})" style="background:#222; padding:15px; cursor:pointer; border:1px solid #444; text-align:center;">
-                    <i class="fa-solid ${c.icon}" style="font-size:2rem; color:var(--primary-accent); margin-bottom:10px;"></i>
-                    <div style="font-weight:bold; color:var(--link-color);">${c.name}</div>
+                <div onclick="router('characters', ${c.id})" style="background:#222; overflow:hidden; cursor:pointer; border:1px solid #444; text-align:center;">
+                    <div style="background:#000;">
+                        ${getThumbnail(c)}
+                    </div>
+                    <div style="padding:10px; font-weight:bold; color:var(--link-color);">${c.name}</div>
                 </div>
             `).join('')}
         </div>
@@ -176,7 +201,7 @@ function renderHome(target) {
     `;
 }
 
-// 캐릭터 페이지 렌더링
+// 캐릭터 페이지 렌더링 (이미지 적용됨)
 function renderCharacterPage(target, charId) {
     if (!charId) {
         target.innerHTML = `
@@ -191,16 +216,24 @@ function renderCharacterPage(target, charId) {
 
     const char = db.characters.find(c => c.id === charId);
     
+    // 이미지가 깨지거나 없을 경우 아이콘을 보여주도록 처리
+    const imageHtml = `
+        <img src="${char.image}" alt="${char.name}" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.display='none'; document.getElementById('backup-icon-${char.id}').style.display='flex';">
+        <div id="backup-icon-${char.id}" style="display:none; width:100%; height:100%; align-items:center; justify-content:center; font-size:4rem; color:#555;">
+            <i class="fa-solid ${char.icon}"></i>
+        </div>
+    `;
+
     target.innerHTML = `
         <div class="page-header">
             <h1 class="page-title">${char.name}</h1>
-            <span style="color: #666; font-size: 0.9rem;">편집자: Playtime_Admin</span>
+            <span style="color: #666; font-size: 0.9rem;">20222241 김한준</span>
         </div>
 
         <aside class="infobox">
             <div class="infobox-header">${char.nameKR}</div>
-            <div class="infobox-image">
-                <i class="fa-solid ${char.icon}"></i>
+            <div class="infobox-image" style="background:#000;">
+                ${imageHtml}
             </div>
             <div class="infobox-data">
                 <div class="infobox-row">
@@ -236,6 +269,7 @@ function renderCharacterPage(target, charId) {
 
         <h2>갤러리</h2>
         <div style="display:flex; gap:10px; margin-top:10px;">
+             <!-- 여기도 실제 이미지가 있다면 아래처럼 img 태그로 바꾸면 됩니다 -->
             <div style="width:100px; height:100px; background:#333; display:flex; justify-content:center; align-items:center;"><i class="fa-solid fa-image"></i></div>
             <div style="width:100px; height:100px; background:#333; display:flex; justify-content:center; align-items:center;"><i class="fa-solid fa-image"></i></div>
         </div>
@@ -248,7 +282,7 @@ function renderCharacterPage(target, charId) {
     `;
 }
 
-// 스토리 렌더링
+// ... existing code ... (renderStory, renderCommunity, router 등 나머지 코드는 동일)
 function renderStory(target) {
     target.innerHTML = `
         <div class="page-header"><h1 class="page-title">스토리라인 (Storyline)</h1></div>
@@ -291,7 +325,6 @@ function renderStory(target) {
     });
 }
 
-// 커뮤니티 렌더링
 function renderCommunity(target) {
     target.innerHTML = `
         <div class="page-header"><h1 class="page-title">커뮤니티 토론</h1></div>
@@ -341,7 +374,6 @@ function addComment() {
     document.getElementById('comm-input').value = "";
 }
 
-// 3. 초기화 및 유틸리티
 function initQuickLinks() {
     const container = document.getElementById('quick-links');
     container.innerHTML = db.characters.map(c => `
@@ -392,7 +424,6 @@ function handleAuth() {
     }
 }
 
-// 페이지 로드 시 시작
 document.addEventListener('DOMContentLoaded', () => {
     initQuickLinks();
     router('home');
