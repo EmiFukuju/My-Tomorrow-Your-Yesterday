@@ -3,58 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playtime Co. - Basic</title>
+    <title>파피 플레이타임 위키</title>
     
-    <!--스타일 파일 연결 -->
+    <!-- 외부 라이브러리 (폰트, 아이콘, 알림창) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS 파일 연결 -->
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-    <!-- 상단 헤더 (로고 + 메뉴) -->
+    <!-- 헤더 -->
     <header>
-        <div class="logo">Playtime!</div>
+        <div class="wiki-logo">
+            <i class="fa-solid fa-gamepad"></i> 파피 위키
+        </div>
         <nav>
-            <button onclick="movePage('홈')">홈</button>
-            <button onclick="movePage('스토리')">스토리</button>
-            <button onclick="movePage('캐릭터')">캐릭터</button>
+            <button onclick="router('home')" id="nav-home" class="active">메인</button>
+            <button onclick="router('characters')" id="nav-characters">캐릭터</button>
+            <button onclick="router('story')" id="nav-story">스토리</button>
+            <button onclick="router('community')" id="nav-community">커뮤니티</button>
         </nav>
-        <!-- 로그인 영역 -->
-        <div class="auth-box">
-            <button id="loginBtn">로그인</button>
+        <div class="user-controls" id="auth-area">
+            <button class="login-btn" onclick="handleAuth()">로그인</button>
         </div>
     </header>
 
-    <!-- 메인 컨텐츠 영역 -->
-    <main>
-        <!-- 메인 타이틀 -->
-        <section class="hero-section">
-            <h1>It's Time to Play</h1>
-            <p>파피플레이타임 팬 커뮤니티에 오신 것을 환영합니다.</p>
-        </section>
+    <!-- 위키 컨테이너 -->
+    <div class="wiki-container">
+        
+        <!-- 메인 콘텐츠 영역 (왼쪽) -->
+        <main class="main-article" id="main-content">
+            <!-- 자바스크립트가 내용을 여기에 채워넣습니다 -->
+        </main>
 
-        <!-- 메뉴 박스들 -->
-        <section class="menu-grid">
-            <div class="content-box">
-                <h2>📖 스토리</h2>
-                <p>게임의 줄거리를 확인하세요.</p>
+        <!-- 사이드바 영역 (오른쪽) -->
+        <aside class="right-rail">
+            <div class="char-list-container">
+                <div class="char-list-header">인기 페이지</div>
+                <div id="quick-links">
+                    <!-- 자바스크립트가 링크를 생성합니다 -->
+                </div>
             </div>
-            <div class="content-box">
-                <h2>🧸 캐릭터 도감</h2>
-                <p>장난감들의 정보를 모았습니다.</p>
-            </div>
-            <div class="content-box">
-                <h2>💬 커뮤니티</h2>
-                <p>다른 사람들과 대화하세요.</p>
-            </div>
-        </section>
-    </main>
 
-    <!-- 3. 하단 푸터 -->
-    <footer>
-        <p>20222241 김한준</p>
-    </footer>
+            <div class="char-list-container" style="background-color: #2a2a2e;">
+                <div class="char-list-header" style="border-color: gold;">커뮤니티 활동</div>
+                <div style="font-size: 0.9rem; color: #aaa; padding: 10px;">
+                    <i class="fa-solid fa-chart-line"></i> 최근 수정된 문서<br>
+                    <i class="fa-solid fa-users"></i> 현재 접속자: 1,987명
+                </div>
+            </div>
+        </aside>
 
-    <!-- 우리가 만든 스크립트 파일 연결 -->
+    </div>
+
+    <!-- JS 파일 연결 -->
     <script src="index.js"></script>
 </body>
 </html>
